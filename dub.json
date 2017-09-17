@@ -9,5 +9,6 @@
 	},
 	"description": "D library for Apache Thrift RPC system",
 	"copyright": "Copyright © 2017, dhasenan",
-	"license": "Apache 2.0"
+	"license": "Apache 2.0",
+  "excludedSourceFiles": ["src/thrift/index.d"]
 }
