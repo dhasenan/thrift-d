@@ -874,6 +874,7 @@ private {
      *   s = The server this connection is part of.
      */
     void init(Socket socket, IOLoop loop) {
+      import thrift.server.base;
       // TODO: This allocation could be avoided.
       socket_ = new TSocket(socket);
 
