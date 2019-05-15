@@ -424,7 +424,7 @@ protected:
 
   void setTimeout(SocketOption type, Duration value) {
     assert(type == SocketOption.SNDTIMEO || type == SocketOption.RCVTIMEO);
-    version (Win32) {
+    version (Windows) {
       if (value > dur!"hnsecs"(0) && value < dur!"msecs"(500)) {
         logError(
           "Socket %s timeout of %s ms might be raised to 500 ms on Windows.",

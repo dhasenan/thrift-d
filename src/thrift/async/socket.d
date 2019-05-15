@@ -343,7 +343,7 @@ private {
     enum SO_ERROR = 0x1007;
   } else version (FreeBSD) {
     enum SO_ERROR = 0x1007;
-  } else version (Win32) {
+  } else version (Windows) {
     import std.c.windows.winsock : SO_ERROR;
   } else static assert(false, "Don't know SO_ERROR on this platform.");
 
