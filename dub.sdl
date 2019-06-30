@@ -1,0 +1,21 @@
+name "thrift-d"
+description "D library for Apache Thrift RPC system"
+authors "dhasenan"
+copyright "Copyright © 2017, dhasenan"
+license "Apache 2.0"
+dependency "libevent" version="~>2.0.2"
+dependency "openssl" version="~>1.1.5"
+excludedSourceFiles "src/thrift/index.d"
+sourcePaths "src"
+importPaths "src"
+targetType "library"
+dflags "-i" "-Isrc"
+version "~master"
+
+configuration "default" {
+	version "NeedTServer"
+}
+
+configuration "no-t-server" {
+}
+
