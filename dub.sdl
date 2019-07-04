@@ -9,7 +9,6 @@ excludedSourceFiles "src/thrift/index.d"
 sourcePaths "src"
 importPaths "src"
 targetType "library"
-dflags "-i" "-Isrc"
 version "~master"
 
 configuration "default" {
